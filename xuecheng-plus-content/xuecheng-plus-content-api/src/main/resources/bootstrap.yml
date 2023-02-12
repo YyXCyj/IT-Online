@@ -1,11 +1,29 @@
-server:
-  servlet:
-    context-path: /content
-  port: 63040
+#server:
+#  servlet:
+#    context-path: /content
+#  port: 63040
 #微服务配置
 spring:
   application:
     name: content-api
+  cloud:
+    nacos:
+      server-addr: 192.168.101.65:8848
+      discovery:
+        namespace: dev148yy
+        group: xuecheng-plus-project
+      config:
+        namespace: dev148yy
+        group: xuecheng-plus-project
+        file-extension: yaml
+        refresh-enabled: true
+        extension-configs:
+          - data-id: content-service-dev.yaml
+            group: xuecheng-plus-project
+            refresh: true
+  profiles:
+    active: dev
+
 
 # 日志文件配置路径
 logging:

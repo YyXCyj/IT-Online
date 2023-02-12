@@ -39,4 +39,7 @@
 
 ![构架图](https://github.com/YyXCyj/IT-Online/blob/master/images/2.png)
 
+>>项目技术栈
+
+![构架图](https://github.com/YyXCyj/IT-Online/blob/master/images/3.png)
 
